@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+       <button onclick="maior();">maior valor</button>
+       <button onclick="menor();">menor valor</button>
+       <button onclick="media();">media</button>
+   
+</body>
+
+<script>
+
+   ALTURAS = [0,0,0,0,0];
+   for(cont=0;cont<=4;cont++)
+   {
+    n = prompt("digite o numero " + (cont+1) );
+    n = parseInt(n); //convertemos para inteiro
+    ALTURAS[cont]
+   }
+
+   function menor()
+   {
+       maior = ALTURAS[0];
+       for(cont=0;cont<=4;cont++) //cont vai de 0 até 4
+       {
+           if(maior > ALTURAS[cont])
+           {
+               maior = ALTURAS[cont];
+           }
+       }
+       alert(maior);
+   }
+
+   function maior()
+   {
+       maior = ALTURAS[0];
+       for(cont=0;cont<=4;cont++) //cont vai de 0 até 4
+       {
+           if(maior < ALTURAS[cont])
+           {
+               maior = ALTURAS[cont];
+           }
+       }
+       alert(maior);
+   }
+   function media()
+   {
+    soma = 0;
+    media = 0;
+    for (cont=0;cont<=4;cont++)
+    {
+        soma = ALTURAS +[cont];
+    }
+    media = soma / 5
+    alert("a media é:  " + media)
+   }
+
+</script>
+
+</html>
